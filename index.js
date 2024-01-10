@@ -31,24 +31,29 @@ const oblicz = () => {
       case '-':
         dzialanie = poprzednie - aktualne
       break
+
       case '*':
         dzialanie = poprzednie * aktualne
       break
 
       case '÷':
+      case "/":
+        
       if(aktualne === 0)
       {
         wyczyscWynik()
         return
       }
+      
         dzialanie = poprzednie / aktualne
       break
 
       case '^':
-        dzialanie = Math.pow(poprzednie, aktualne)
-      break
+    dzialanie = Math.pow(poprzednie, aktualne);
+    break;
 
       case '%':
+      
         dzialanie = poprzednie / 100 * aktualne
       break
 
@@ -59,6 +64,7 @@ const oblicz = () => {
       case 'log':
         dzialanie = Math.log(poprzednie) / Math.log(aktualne)
       break
+
     default:
       return
   }
@@ -67,7 +73,6 @@ const oblicz = () => {
   poprzednieDzialanie = ''
 
 }
-
 
 const wybierzOperacje = (operator) => {
   if(aktualneDzialanie === '') {
@@ -88,7 +93,7 @@ const wybierzOperacje = (operator) => {
 }
 
 const dodajLiczbe = (liczba) => {
-  if(liczba === '•') {
+  if(liczba === '.') {
     if(aktualneDzialanie.includes('.')) {
       return
     }
@@ -103,14 +108,13 @@ const usunLiczbe = () => {
 }
 
 const zaktualizujWynik = () => {
-  wynikAktualne.innerText = aktualneDzialanie;
+  wynikAktualne.innerText = aktualneDzialanie
 
   if(operacja != null) {
-  wynikPoprzednie.innerText = poprzednieDzialanie + operacja;
+  wynikPoprzednie.innerText = poprzednieDzialanie + operacja
   } else {
-    wynikPoprzednie.innerText = '';
+    wynikPoprzednie.innerText = ''
   }
-  
 }
 
 const wyczyscWynik = () => {
@@ -147,3 +151,15 @@ wyczysc.addEventListener('click', () => {
   wyczyscWynik()
   zaktualizujWynik()
 })
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const darkModeSwitch = document.getElementById('darkModeSwitch');
+  const body = document.body;
+
+  darkModeSwitch.addEventListener('change', function () {
+      body.classList.toggle('dark-mode', this.checked);
+  });
+});
+
+

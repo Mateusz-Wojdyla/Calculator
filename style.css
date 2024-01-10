@@ -9,7 +9,7 @@
 body{
     padding:0;
     margin:0;
-    background-color:#6c757d;
+    background-color:#d3dfe9;
     display:flex;
 
 }
@@ -25,46 +25,10 @@ body{
     margin-right: auto;
     margin-top:100px;
     position: static;
+    border-radius:20px;
 
 }
-.box-exit{
-    display: flex;
-    height: 15px;
-    width:15px;
-    border:solid 2px red;
-    margin-left:760px;
-    margin-top:110px;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-}
-ion-icon{
-    font-size:large;
-    
-}
-.box-minimalizing{
-    display: flex;
-    height: 15px;
-    width:15px;
-    
-    position:fixed;
-    margin-top: 110px;
-    margin-left:735px;
-    border:solid 2px yellow;
-    
-}
 
-
-.box-changeWindow{
-    display: flex;
-    height: 15px;
-    width:15px;
-    border:2px solid green;
-    position:fixed;
-    margin-top:110px;
-    margin-left:710px;
-    
-}
 
 
 .calculator{
@@ -75,6 +39,7 @@ ion-icon{
     grid-template-columns: repeat(5,80px);
     grid-template-rows: minmax( auto) repeat(5, 80px);
     min-height:50vh;
+   
     
 
 }
@@ -114,21 +79,19 @@ button{
     cursor:pointer;
     height:80px;
     border-radius: 50px;
-    border:1px solid #333533;
+    border:2px solid #fefffe;
     background-color:#242423;
     outline:none;
-    box-shadow: 1px 2px 1px  ;
+    box-shadow: 1px 2px 1px black ;
     padding:6px 6px;
   
 }
 button:hover, button:focus{
    
-    transition:background-color0.3s ease;
-  
-    
-}
+     transition:background-colo 0.3s ease; 
+ }
 button:active{
-    background-color:rgba(36,36,35, .55);
+    background-color:rgba(32, 32, 31, 0.55);
 }
 .col-dwa{
     grid-column:span 2;
@@ -139,3 +102,54 @@ button:active{
     height:160px;
     
 }
+
+
+.dark-mode-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.switch-label {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #686767;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+#darkModeSwitch{
+    opacity: 0;
+}
+
+#darkModeSwitch:checked + .switch-label {
+    background-color: #2ecc71; 
+}
+
+.switch-label::before {
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+#darkModeSwitch:checked + .switch-label::before {
+    transform: translateX(20px);
+}
+
+
+.dark-mode {
+    background-color: #424242; 
+    color: #ecf0f1; 
+
+}
+
+
+ 
