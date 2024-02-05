@@ -471,13 +471,12 @@ document.addEventListener("DOMContentLoaded", function () {
 //   c++;
 //   console.log(nums);
 //  }
- 
 
 // let d = 0;
 // do{
 
 // }while()
-                //PĘTLA
+//PĘTLA
 // let c = -6;
 // while(c < 7){
 //   console.log(c)
@@ -508,10 +507,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // 	console.log(arr[a] * 2);
 // }
 
-
-
-		//PĘTLA FOR DO OGARNIĘCIA BO NIE ROZUMIEM WSZYSTKIEGO 
-
+//PĘTLA FOR DO OGARNIĘCIA BO NIE ROZUMIEM WSZYSTKIEGO
 
 // const arr = [-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6];
 // let sum = 0;
@@ -534,10 +530,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // a **=3;//8
 // console.log(a);
 
-
 // console.log(10 % 4 );  // 2
 // console.log(43 % 3)// 1
-// console.log(43 % 43);//0 bo parzysta liczba 
+// console.log(43 % 43);//0 bo parzysta liczba
 
 // const arr = [-3,-2,-1,0,1,2,3,4,5,6,7,8];
 
@@ -550,7 +545,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // 		console.log("nie parzysta")
 // 	}
 // }
-					//PĘTLA FOR Z TABLICĄ SPRAWDZAJĄCA KTÓRA LICZBA JEST PARZYSTA 
+//PĘTLA FOR Z TABLICĄ SPRAWDZAJĄCA KTÓRA LICZBA JEST PARZYSTA
 
 // const arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
 // let sum = 0;
@@ -574,15 +569,12 @@ document.addEventListener("DOMContentLoaded", function () {
 // console.log(++n);// najpierw dodaje 1 i wtedy wyswietla
 
 // n = 20;
-// console.log(n--); // wynik 20 
-// console.log(n); //wynik 19 ponieważ wyżej najpierw wyświetlilo i później odjeło 1 
+// console.log(n--); // wynik 20
+// console.log(n); //wynik 19 ponieważ wyżej najpierw wyświetlilo i później odjeło 1
 
 // n = 20;
 // console.log(--n); // wynik 19 ponieważ najpierw odejmuje 1 od zmiennej n
-// console.log(n); // 19 
-
-
-
+// console.log(n); // 19
 
 // let speed = 150;
 // if(speed > 200){
@@ -590,9 +582,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // }else{
 // 	console.log("wolno");
 // }
-//////////////SKRÓCOWA WERSJA KODY WYZEJ 
-				// let result = speed > 200 ?"szybko" : "wolno";
-				// console.log(result);
+//////////////SKRÓCOWA WERSJA KODY WYZEJ
+// let result = speed > 200 ?"szybko" : "wolno";
+// console.log(result);
 
 // let num = 23;
 // let result = num > 20 ?"wieksza" : "mniejsza";
@@ -604,10 +596,10 @@ document.addEventListener("DOMContentLoaded", function () {
 // 	console.log("większy");
 // }
 
-// console.log(6 > 1);// true 
-// console.log(6 < 1);// false 
+// console.log(6 > 1);// true
+// console.log(6 < 1);// false
 
-// /////////////////////////PĘTLA IF ELSE IF SPRAWDZAJĄCA TEMPERATURE 
+// /////////////////////////PĘTLA IF ELSE IF SPRAWDZAJĄCA TEMPERATURE
 // let temp = 5;
 // if(temp <= 0){
 // 	console.log("Zimno i slisko");
@@ -619,7 +611,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // 	console.log("lato")
 // }
 
-
 // let a = 10;//10
 // let b = a;//10
 // b++;// teraz b to 11 ponieważ inkrementacja dodaje 1
@@ -628,13 +619,13 @@ document.addEventListener("DOMContentLoaded", function () {
 // console.log("b:",b) // 11
 
 // let obj = {a: 10};
-// let data = obj; // data i obj wzkazuja na to samo miejsce w pamięci 
+// let data = obj; // data i obj wzkazuja na to samo miejsce w pamięci
 // obj.a++;
 // console.log("obj.a:",obj.a);//11
 // console.log("data.a:", data.a);// tez 11
 
 // if (obj == data){
-// 	// czy obj wskazuje na to samo co data 
+// 	// czy obj wskazuje na to samo co data
 // 	console.log("wskazuja na to samo miejsce w pamięci ");
 // }else {
 // 	console.log("nie wskazują na to samo miejsce ");
@@ -651,13 +642,11 @@ document.addEventListener("DOMContentLoaded", function () {
 // console.log( 4 == 4); //true
 // console.log( 4 == "4");// true ponieważ nie sprawdza typu /string/number
 
-// console.log( 4 === "4"); //false nie zgadza się typ "4" to string a nie liczba  
-// console.log(4 === 4);//true wszystko się zgadaza 
+// console.log( 4 === "4"); //false nie zgadza się typ "4" to string a nie liczba
+// console.log(4 === 4);//true wszystko się zgadaza
 // console.log(5 !== 5); //false sprawdza czy NIE są równe (w tym przypadku są równe więc jest falce )
-// console.log(5 !== "5");// true ponieważ nie są równe bo jest "5" string 
-// console.log(5 !== 4);//true poniewaz się nie zgadza  
-
-
+// console.log(5 !== "5");// true ponieważ nie są równe bo jest "5" string
+// console.log(5 !== 4);//true poniewaz się nie zgadza
 
 // let a = 7, b = 10;
 // console.log(b);//10   dwie zmienne za jednym razem
@@ -666,34 +655,32 @@ document.addEventListener("DOMContentLoaded", function () {
 // 	console.log(i,j);
 // }
 
-// console.log( true && true);// true 
+// console.log( true && true);// true
 // console.log( true && false);// false
-// console.log( false && false );//false 
+// console.log( false && false );//false
 // console.log( false && true);//false
 // console.log( 5 >= 5 && 1 < 4);
 
-
-
-// if ( true && true) console.log("#1");// true 
+// if ( true && true) console.log("#1");// true
 // if ( true && false) console.log("#2"); //false
 // if ( false && true) console.log("#3");//false
 // if (false && false) console.log("#4"); // false
 // if (4 == 4 && 3 > 1)//#5 true
-// if (8 < 0 && 4 < 5)//#6 false 
-// if ( 1 == 1 && 3 >= 2 && 1 > 0); //#7 true 
+// if (8 < 0 && 4 < 5)//#6 false
+// if ( 1 == 1 && 3 >= 2 && 1 > 0); //#7 true
 // id ( 10 != 6 && 2 <= 5)//#8 true
 
-// console.log( true || true);// true 
+// console.log( true || true);// true
 // console.log( false || true );//true
 // console.log( true || false)//true
 // console.log(false || false );// FALSE
-// //true zawsze fdy jest przynajmniej jedna PRAWDA a FALSE tylko wtedy jesli są dwa razy FALSE 
+// //true zawsze fdy jest przynajmniej jedna PRAWDA a FALSE tylko wtedy jesli są dwa razy FALSE
 
 // if (true || false);//true
 // if (false || false);//false
 // if (false || false ||true);//true
 // if ( 11 == 11 || 3 >= 0 );//true
-// if(14 <= 21 || 3 != 3);//true 
+// if(14 <= 21 || 3 != 3);//true
 // if ("kasia" == "kasia" || 7 < 1);//true
 // if (3 < 0 || 9 == 5 || 3 > 5);//false
 
@@ -739,13 +726,12 @@ document.addEventListener("DOMContentLoaded", function () {
 // let obj = {
 // 	a:14 , b:14, c:15
 // }
-// console.log( "a" in obj );//true ponieważ jest w objekcie 
-// console.log( "d" in obj );// false ponieważ nie ma tego w tablicy 
+// console.log( "a" in obj );//true ponieważ jest w objekcie
+// console.log( "d" in obj );// false ponieważ nie ma tego w tablicy
 
 // const arr = [1,2,3,4,5];
 // console.log(3 in arr);//true
 // console.log(8 in arr);//false
-
 
 // const date = new Date(2030, 12, 15);
 // console.log(date);
@@ -769,3 +755,343 @@ document.addEventListener("DOMContentLoaded", function () {
 // console.log(!0);//true
 
 // console.log(!!1)
+
+// let txt = String(123);
+// console.log(typeof txt);// string
+
+// let num = parseInt("12121")
+// console.log(typeof num);// number
+
+// let data = "txxxt" + 123;
+// console.log(data);//txxxt123
+
+// let info = "10"
+// if (info + 2 == 12){
+// 	console.log("!");
+// }
+
+// let d = +"100";
+// console.log(typeof d);
+
+// d = -"100";
+// console.log(typeof d);
+// console.log(d);
+
+// if ("false") console.log("wykona")
+// if (" ") console.log("wykona")// wykona się
+// if ("") console.log("wykona")// puste "" się nie wykona
+// if ("0") console.log("wykona")// wykona się
+// if (!"0") console.log("wykona")// nie wykona się bo jest !
+// if ({}) console.log("wykona")// wykona sie
+// if ({a:10} == "[obj Obj]") console.log("wykona");//wykona się
+// console.log(String({a:10}));// konwersja jawna na string
+
+// false values
+// if (0) console.log("niewykona się ");
+// if (-0) console.log("nie wykona się ");
+// if ("") console.log("nie wykona się ");
+// if (Nan) console.log("nie wykona się ");
+// if (null) console.log("nie wykona się ");
+// if (undefined) console.log("nie wykona się ");
+// if (-0) console.log("nie wykona się ");
+
+//truthly values
+// if (1) console.log("wykona się ");
+// if (-1) console.log("wykona się ");
+// if (678768768) console.log("wykona się ");
+// if ([]) console.log("wykona się ");
+// if ({}) console.log("wykona się ");
+// if (" lala") console.log("wykona się ");
+// if (function test (){}) console.log("wykona się ");
+// if (true) console.log("wykona się ");
+
+// let num;//zadeklarowana zmienna
+// console.log(num);//undefinde
+// num = 12;// zadeklarowana i zdefiniowana poniewaz ma wartość
+//  let a = 12;//zmienne globalne
+//  const txt = 'kasia';//zmienne globalne
+//  if (true){
+// 	let a = 100;//zmienne lokalne w bloku kodu
+// 	let txt = "zosia";//zmienne lokalne przysłaniają zmienne globalne
+// 	console.log(a);//100
+// 	console.log(txt);//zosia
+//  }
+//  console.log(a);//12//zmienna globalana dziala poza blokiem kodu
+//  console.log(txt);//kasia dziala poza blokiem kodu
+
+//  for (let i = 0; 1 < 3; i++){
+// 	let a = 50;
+// 	console.log("for",i,a);
+//  }
+// let name = "Asia";
+// console.log(name);// asia
+// if(name == "Asia"){
+// 	let name = "Ola"
+// 	console.log(name);
+// }
+
+// var a = 10;// var nie działa lokalnie tylko zawsze globalnie
+// if (true){
+// 	var a = 23;
+// 	console.log(a);//23
+// 	var b = 100;
+// }
+// console.log(a);//23
+// console.log(n);// 100]
+
+//deklaracja funkcji
+//a,b,c,d to parametry
+// function test(a, b, c, d){
+// 	let sum = a + b + c + d;
+// 	return sum;
+// }
+// //wywołanie funkcji
+// //1,2,3,4 to argumenty
+// let result = test(1,2,3,4);
+// console.log(result);//10
+
+// function + nazwa funkcji ()w nawiasie np a, b
+//tworzymy zmienna o naszwie result = a * b jesli czcemy ponozyć dwie liczby w tym wypadku podajemy liczby zamiast a, b
+//piszemy pod tym return resultat;czyli w console.log( wpisujemy nazwe funkcji w tym przypadku multiplyotwieramy nawiasy ()i w tych nawiazach deklarujemy liczby np 87 , 99 czyli nasze a, b ) to daje wynik w konsoli
+// function multiply(a, b){
+// 	let result = a * b;
+// 	return result;
+
+// }console.log(multiply(3, 10));
+// console.log(multiply(120, 56));
+// console.log(multiply(1234, 1234));
+
+// function foo(name){
+// 	if (name === "kasia"){
+// 		return;//przerywanie działani funkcji
+// 	}else {
+// 		console.log("imie to :", name);
+// 	}
+// 	return null ;
+
+// }	console.log(foo("zosia"));
+// console.log(foo("kasia"));
+
+// function averageValue(a, b, c, d){
+// 	return (a + b + c + d) / 4;
+// }console.log(averageValue(2,4,8,10));
+// console.log(averageValue(30, 60 ,60, 120))
+// console.log(averageValue(5,10,15,20));
+
+// function hireEmployee(name, surname, email, age , profession){
+// if (name.length < 3) return null;
+// if (surname.length < 3) return null;
+// if (email.length < 3) return null;
+// if (age.length < 18) return null;
+// if (profession.length < 3) return null;
+
+// if ( profession != "programmer" && profession != "admin" && profession != "menager"){
+// 	return null;
+//     }
+
+// 	const obj = {
+// 		name : name,
+// 		surname: surname,
+// 		email: email,
+// 		age: age,
+// 		profession: profession
+// 	};
+// 	return obj;
+
+// }
+// 	 const employee1 = hireEmployee("kasia", "kowalska", "kasia@gmail.com", 30, "programmer");
+
+// 	 console.log(employee1);
+// 	 const employee2 = hireEmployee("ol", "kowalska", "kasia@gmail.com", 30, "programmer");
+
+// 	 console.log(employee2);
+
+// function createTv(brand, screanSize, color) {
+// 	if (color != "white" && color != "black" && color != "silver") {
+// 		return null;
+// 	}
+
+// 	const obj = {
+// 		brand: brand,
+// 		screanSize: screanSize,
+// 		color: color,
+// 	};
+// 	return obj;
+// }
+// const tv = createTv("sony", 42, "black");
+// const tv1 = createTv("sharp", 32, "white");
+// const tv2 = createTv("lenovo", 50, "silver");
+// const tv3 = createTv("lenovo", 42, "green");
+// console.log(tv);
+// console.log(tv1);
+// console.log(tv2);
+// console.log(tv3);
+
+// // funkcja anonimowa wewnatrz zmiennej lub satałej . daje łatwe wywołanie i mozliwość zmiany parametrow wewnątrz funkcji
+// let foo = function (a, b){
+// 	return a +  b;
+// }
+// console.log(foo(5,10));
+
+// foo = function (a, b){
+// 	return a - b;
+// }
+// console.log(foo(5, 10));
+
+// let multiply = function (a, b){
+// 	return a * b;
+// }
+// console.log(multiply(3, 6));
+
+// let test = multiply;
+// console.log(test(10, 25));
+
+// function show(txt){
+// 	console.log(txt);
+// }
+// function showArr(arr, callback){
+// 	for(let i = 0; i < arr.length;i++){
+// 		const num = arr[i];
+// 		callback(num);
+// 	}
+// }
+// const tab = [1,2,3,4,5];
+// showArr(tab, show);
+
+// function greaterThan6 (arr, callback){
+// 	for(let i = 0;i < arr.length;i++){
+// 		if (arr[i] > 6) callback(arr[i]);
+// 	}
+
+// }
+// function show(txt){
+// 	console.log(txt);
+// }
+// const arr = [1,2,3,4,5,6,7,8,9,10,11,12];
+
+// greaterThan6(arr, show)
+
+// function sumAll(){
+// 	let result = 0;
+// 	for(let i = 0;i < arguments.length;i++){
+// 		result += arguments[i]
+// 	}
+// 	return result;
+// }
+// console.log(sumAll(1,2,3));
+// console.log(sumAll(1,2,3,4,5,6,7,8,9,10,11,12,13,14));
+
+// function foo(num, obj){
+// 	num = 12;
+// 	obj.data = "test!"
+// }
+// let a = 7;
+// let data = {data: 'tekst'};
+// foo(a, data);
+
+// console.log("a", a);// nadal 7
+// console.log("data:", data);// tu się zmienia
+
+// function foo(arr){
+// 	for(let i = 0; i < arr.length; i++){
+// 		arr[i] *=3;
+// 	}
+// }
+// const tab = [1,2,3,4,5,6,7];
+// foo(tab);
+// console.log(tab);
+
+// function test(arr){
+// 	function show(data){
+// 	console.log(data);
+// 	}
+// 	for(let i = 0; i < arr.length;i++)
+// 		show(arr[i] * 2);
+// }
+// test([1,2,3,4,5]);
+
+// function creatrEmployee(name = "unknown",
+// 	 surname = "unknown",
+//  	 email = "unknown"){
+// 		return{
+// 			name: name,
+// 			surname: surname,
+// 			email: email
+// 		};
+// }
+// console.log(creatrEmployee());
+// console.log(creatrEmployee("ola"));
+// console.log(creatrEmployee("ola","kowalska"));
+
+// function foo(...params){
+// 	console.log(params);
+// }
+// foo(1,2,3,4,5,6,7,8)// ... to rest operator w ten sposób można w inny miejścu zapisac wartości tablic y
+
+// function test(a, b, c,d){
+// 	console.log(a, b, c, d)
+// }
+// const arr = [1,2,3,4];
+
+// test(...arr);// w ten sposób można przypisac wartości dla a,b,c,d itp tak jak w tym przypadku przypisałem 1,2,3,4 w miejsce a,b,c,d
+// // uzywając ...arr
+
+// let data = {
+// 	name: "kasia",
+// 	city: "wawa",
+// 	favcolor: "red"
+// };
+
+// let obj = {
+// 	...data,
+// 	email: "lubieWpupe@gmail.pl",
+// 	country: "poland",
+// 	city: "krk"
+// };// ...data czyli piszemy ... i nazwe elementu który chcemy skopiowac w tym przypadku objekt i mozemy dodawac do niego nowe wartości i nadpisywac już istniejące
+// console.log(data);
+// console.log(obj);
+
+
+
+// function createComputer(a, b, c, d) {
+// 	return {
+// 		cpu: a,
+// 		gpu: b,
+// 		ram: c,
+// 		dysk: d,
+// 	};
+// }
+// //                             a       b         c       d
+// let computer = createComputer("amd", "nvidia", "32gb", "1tb");
+// console.log(computer);
+
+// function createLaptop(obj){
+// 	return{
+// 		...obj,
+// 		type: "laptop",
+// 		weight: 2.5
+// 	};
+// }
+// let laptop = createLaptop(computer);
+// console.log(laptop)
+
+// function createUser(name, contact){
+// 	let user = {
+// 		name :name,
+		
+// 	}
+// 	if (typeof contact == "string"){//sprawdza czy kontakt to email czy nr telefonu, jeśli typ to string to dodaje wartość email i podaje email
+// 		user.email = contact;
+// 	}
+// 	if (typeof contact == "number"){
+// 		user.telephon = contact;// jesli kontakt to numer to wtedy dodaje wartość telephone i podaje numer telefonu w contact
+// 	}
+// 	return user;
+
+// 	};//stworzone 2 uzytkowniczki w celu sprawdzenia działania 
+// 	let user1 = createUser("ola", "ola@example.com");
+// 	console.log(user1)
+// 	let user2 = createUser("kasia", 458758475);
+// 	console.log(user2)
+
+	
