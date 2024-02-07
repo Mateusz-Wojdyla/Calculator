@@ -1094,4 +1094,126 @@ document.addEventListener("DOMContentLoaded", function () {
 // 	let user2 = createUser("kasia", 458758475);
 // 	console.log(user2)
 
-	
+
+// const brand = "lenowo";
+// 	let phone = {
+// 		brand: "sony",
+// 		model: "xperia",
+// 		date: 2023,
+// 		connect: function (contact){
+// 			console.log("polączenie z:",contact);
+// 		},
+// 		getInfo: function(){
+// 			console.log(this.brand, this.model, this.date);
+// 		}
+// 	};
+// 	phone.connect("kasia");
+// 	phone.getInfo();
+
+// const tvFactory = {
+// 	name: "Factory",
+// 	city: "Kraków",
+// 	employees:[],
+// 	brand: "Sharp", 
+// 	addEmployee: function(name,surname){
+// 		const obj = {
+// 			name: name,
+// 			surname: surname,
+// 			email: `${name.toLowerCase()}.${surname.toLowerCase()}@example.com`
+// 		};
+// 		this.employees.push(obj);
+// 	},
+// 	showEmployees: function(){
+// 		// console.log(this.name,"employess");
+
+// 		for(let i = 0; i < this.employees.length; i++){
+// 			const e = this.employees[i];
+// 			console.log(e.name, e.surname, e.email);
+// 		}
+// 	},
+// 	makeTv: function(model, color){
+// 		return{
+// 			id: `${this.brand}-${model}-${color}-Tv`,
+// 			brand: this.brand,
+// 			model:model,
+// 			color:color
+// 		}
+// 	}
+// };
+// tvFactory.addEmployee("ola","kowalska");
+// tvFactory.addEmployee("Adam","Adamski");
+// // console.log(tvFactory.employees);
+
+// tvFactory.showEmployees(yy);
+
+// let tv1 = tvFactory.makeTv("x1","silver");
+// let tv2 = tvFactory.makeTv("x2","black");
+// // console.log(tv1, tv2);
+
+// tvFactory.name = "Factory ltd.";
+// tvFactory["name"] = "Tv Factory ltd";
+// // console.log(tvFactory);
+
+// const factoryName = "name";
+// tvFactory[factoryName] = "Sharp Tv Factory";
+// // console.log(tvFactory);
+
+
+const school = {
+	name: "KPU Krosno",
+	city: "Krosno",
+	student: [],
+
+	addStudent: function(name, surname){
+		const obj = {
+			name: name,
+			surname: surname,
+		};
+		const index = this.student.length;
+		this.student[index] = obj;
+	},
+	showStudents: function(){
+		if( this.student.length == 0){
+			console.log("Brak studentów w szkole");
+		}else{
+			for( let i = 0; i < this.student.length; i++){
+			const s = this.student[i];
+			console.log(s.name, s.surname);
+		};
+		};
+		
+
+	},
+	showStudentsByName: function(name) {
+		if (this.student.length == 0){
+			console.log("brak studentów w szkole");
+		}else{
+			console.log("students by name",name,":");
+		for (let i = 0; i < this.student.length; i++){
+			const s = this.student[i];
+			if (s.name === name) console.log(s.name,s.surname);
+		};
+		};
+		
+	},
+	getNumStudents: function(){
+		return this.student.length;
+	},
+	resetStudents:function(){
+		this.student = [];
+	}
+};
+	school.addStudent("Ola","kowalska");
+	school.addStudent("Dominika","Opałka");
+	school.addStudent("Nikola","Opałka");
+	school.addStudent("Ola","Czupa");
+	school.addStudent("adam","kowalska");
+	console.log(school.student);
+
+	school.showStudents();
+
+	school.showStudentsByName("Ola");
+
+	console.log(school.getNumStudents());
+	school.resetStudents();
+	console.log(school.getNumStudents());
