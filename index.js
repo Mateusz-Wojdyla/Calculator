@@ -1051,8 +1051,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // console.log(data);
 // console.log(obj);
 
-
-
 // function createComputer(a, b, c, d) {
 // 	return {
 // 		cpu: a,
@@ -1078,7 +1076,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // function createUser(name, contact){
 // 	let user = {
 // 		name :name,
-		
+
 // 	}
 // 	if (typeof contact == "string"){//sprawdza czy kontakt to email czy nr telefonu, jeśli typ to string to dodaje wartość email i podaje email
 // 		user.email = contact;
@@ -1088,12 +1086,11 @@ document.addEventListener("DOMContentLoaded", function () {
 // 	}
 // 	return user;
 
-// 	};//stworzone 2 uzytkowniczki w celu sprawdzenia działania 
+// 	};//stworzone 2 uzytkowniczki w celu sprawdzenia działania
 // 	let user1 = createUser("ola", "ola@example.com");
 // 	console.log(user1)
 // 	let user2 = createUser("kasia", 458758475);
 // 	console.log(user2)
-
 
 // const brand = "lenowo";
 // 	let phone = {
@@ -1114,7 +1111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // 	name: "Factory",
 // 	city: "Kraków",
 // 	employees:[],
-// 	brand: "Sharp", 
+// 	brand: "Sharp",
 // 	addEmployee: function(name,surname){
 // 		const obj = {
 // 			name: name,
@@ -1158,62 +1155,253 @@ document.addEventListener("DOMContentLoaded", function () {
 // tvFactory[factoryName] = "Sharp Tv Factory";
 // // console.log(tvFactory);
 
+// const school = {
+// 	name: "KPU Krosno",
+// 	city: "Krosno",
+// 	student: [],
 
-const school = {
-	name: "KPU Krosno",
-	city: "Krosno",
-	student: [],
+// 	addStudent: function(name, surname){
+// 		const obj = {
+// 			name: name,
+// 			surname: surname,
+// 		};
+// 		const index = this.student.length;
+// 		this.student[index] = obj;
+// 	},
+// 	showStudents: function(){
+// 		if( this.student.length == 0){
+// 			console.log("Brak studentów w szkole");
+// 		}else{
+// 			for( let i = 0; i < this.student.length; i++){
+// 			const s = this.student[i];
+// 			console.log(s.name, s.surname);
+// 		};
+// 		};
 
-	addStudent: function(name, surname){
-		const obj = {
-			name: name,
-			surname: surname,
-		};
-		const index = this.student.length;
-		this.student[index] = obj;
-	},
-	showStudents: function(){
-		if( this.student.length == 0){
-			console.log("Brak studentów w szkole");
-		}else{
-			for( let i = 0; i < this.student.length; i++){
-			const s = this.student[i];
-			console.log(s.name, s.surname);
-		};
-		};
-		
+// 	},
+// 	showStudentsByName: function(name) {
+// 		if (this.student.length == 0){
+// 			console.log("brak studentów w szkole");
+// 		}else{
+// 			console.log("students by name",name,":");
+// 		for (let i = 0; i < this.student.length; i++){
+// 			const s = this.student[i];
+// 			if (s.name === name) console.log(s.name,s.surname);
+// 		};
+// 		};
 
-	},
-	showStudentsByName: function(name) {
-		if (this.student.length == 0){
-			console.log("brak studentów w szkole");
-		}else{
-			console.log("students by name",name,":");
-		for (let i = 0; i < this.student.length; i++){
-			const s = this.student[i];
-			if (s.name === name) console.log(s.name,s.surname);
-		};
-		};
-		
-	},
-	getNumStudents: function(){
-		return this.student.length;
-	},
-	resetStudents:function(){
-		this.student = [];
-	}
-};
-	school.addStudent("Ola","kowalska");
-	school.addStudent("Dominika","Opałka");
-	school.addStudent("Nikola","Opałka");
-	school.addStudent("Ola","Czupa");
-	school.addStudent("adam","kowalska");
-	console.log(school.student);
+// 	},
+// 	getNumStudents: function(){
+// 		return this.student.length;
+// 	},
+// 	resetStudents:function(){
+// 		this.student = [];
+// 	}
+// };
+// 	school.addStudent("Ola","kowalska");
+// 	school.addStudent("Dominika","Opałka");
+// 	school.addStudent("Nikola","Opałka");
+// 	school.addStudent("Ola","Czupa");
+// 	school.addStudent("adam","kowalska");
+// 	console.log(school.student);
 
-	school.showStudents();
+// 	school.showStudents();
 
-	school.showStudentsByName("Ola");
+// 	school.showStudentsByName("Ola");
 
-	console.log(school.getNumStudents());
-	school.resetStudents();
-	console.log(school.getNumStudents());
+// 	console.log(school.getNumStudents());
+// 	school.resetStudents();
+// 	console.log(school.getNumStudents());
+
+// function test(a, b){
+// 	return a + b;
+// }
+// const multiply = (a, b) => a + b;
+// console.log(multiply(30, 5));
+
+// const subscrat = (a, b) =>{
+// 	return a - b;
+// }
+
+// console.log(subscrat(20,4));
+// let show = (...params) => console.log(params);
+// show(1,2,3,4,5,6);
+
+// let getObj = (data) =>{
+// 	return {
+// 		...data,
+// 		info: "some obj"
+// 	};
+// }
+// const obj = {
+// 	a: 1,
+// 	b:2
+// };
+// console.log(getObj(obj));
+
+// let getObj2 = (data) => ({...data, info:"another obj"});
+// console.log(getObj2(obj));
+
+// if (true){
+// 	var a = 5;
+// };
+// console.log(a);//5
+
+// (function (data){
+// 	console.log(data);
+// 	var b = 9;
+// 	console.log(b);//9
+// })("test");
+// console.log("dostep do b:",b);// ograiczenie var tylko do bloku kodu
+// let data = new Date();
+// console.log(date);
+
+// function Car(brand, name, color){
+// 	this.brand = brand;
+// 	this.name = name;
+// 	this.color = color;
+// 	this.year = 2005;
+// 	this.printData = function(){
+// 		console.log(this.brand, this.name, this.color, this.year);
+// 	}
+// }
+// let car1 = new Car("ford","Mustang","red");
+// console.log(car1);
+// car1.printData();
+
+// let car2 = new Car("ford","Mustang","black");
+// console.log(car2);
+// car2.printData();
+
+// function Magazine(title) {
+// 	this.title = title;
+// 	this.advarts = [];
+// 	this.addAdvert = function (name, page) {
+// 		this.advarts.push({
+// 			name: name,
+// 			page: page,
+// 		});
+// 	};
+// 	this.printAdverts = function () {
+// 		for (let i = 0; i < this.advarts.length; i++) {
+// 			const a = this.advarts[i];
+// 			console.log("Adverts", a.name, a.page);
+// 		}
+// 	};
+// }
+// const magazine = new Magazine("It world");
+// console.log(magazine);
+
+// magazine.addAdvert("computer", 3);
+// magazine.addAdvert("computer", 6);
+// magazine.addAdvert("laptop", 2);
+// magazine.printAdverts();
+
+// function Car(brand, model) {
+// 	this.brand = brand;
+// 	this.model = model;
+// 	this.color = "red";
+
+// 	this.printInfo = function () {
+// 		console.log(this.brand, this.model, this.color);
+// 	};
+// }
+// let car1 = Car("ford", "galaxy");
+// console.log(car1); //undefinde brak słowa kluczowego nem
+
+// function Vehicle(brand, model) {
+// 	if (this instanceof Vehicle == false) {
+// 		//wywołany bez new
+// 		return new Vehicle(brand, model);
+// 	}
+
+// 	this.brand = brand;
+// 	this.model = model;
+// 	this.color = "red";
+
+// 	this.printInfo = function () {
+// 		console.log(this.brand, this.model, this.color);
+// 	};
+// }
+// let v1 = Vehicle("doge", "ram");
+// console.log(v1);
+
+// let v2 = new Vehicle("doge", "ram");
+// console.log(v2);
+
+// const obj = {
+// 	a: 12,
+// 	b: "test",
+// 	printData: function(){
+// 		console.log(this.a, this.b);
+// 	},
+// 	arr: [1,2,3,4]
+// };
+
+// for (const prop in obj){
+// 	if (obj.hasOwnProperty(prop)){
+// 		console.log(prop, obj[prop]);
+// 	}
+
+// }
+
+// const user = {
+// 	_name: null,
+
+// 	set name(newValue){
+// 		if (newValue.length > 2) {
+// 			this._name = newValue;
+// 		}else{
+// 			console.log("name too short")
+// 		}
+// 	},
+// 	get name(){
+// 		return this._name;
+// 	}
+// };
+// user.name = "Al";
+// console.log(user.name);
+
+
+
+
+// const truck = {
+// 	_brand: null,
+// 	_model: null,
+// 	_topSpeed: 0,
+
+// 	set brand(newValue) {
+// 		this._brand = newValue;
+// 	},
+// 	get brand() {
+// 		return this._brand;
+// 	},
+// 	set model(newValue) {
+// 		this._model = newValue;
+// 	},
+// 	get model() {
+// 		return this._model;
+// 	},
+// 	set topSpeed(value) {
+// 		if (value >= 0) {
+// 			this._topSpeed = value;
+// 		} else {
+// 			console.log("speed too low");
+// 		}
+// 	},
+// 	get topSpeed() {
+// 		return this._topSpeed;
+// 	},
+// };
+
+// truck.brand = "scania";
+// truck.model = "xd450";
+// truck.topSpeed = 90;
+
+// console.log(truck.brand);
+// console.log(truck.model);
+// console.log(truck.topSpeed);
+
+
+
+// console.log(window);
