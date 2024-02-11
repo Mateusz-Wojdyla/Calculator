@@ -1362,9 +1362,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // user.name = "Al";
 // console.log(user.name);
 
-
-
-
 // const truck = {
 // 	_brand: null,
 // 	_model: null,
@@ -1402,6 +1399,174 @@ document.addEventListener("DOMContentLoaded", function () {
 // console.log(truck.model);
 // console.log(truck.topSpeed);
 
-
-
 // console.log(window);
+
+// window.onload = function(){
+// 	console.log("website loaded");
+// };
+// window.onresize = function(){
+// 	console.log(window.innerWidth, window.innerHeight);
+// };
+
+// window.addEventListener("load", function () {
+// 	console.log("Website downloaded and parsed!");
+// });
+
+// window.addEventListener("resize", () => {
+// 	console.log(window.innerWidth, window.innerHeight);
+// });
+
+// let g1 = 12;
+// let g1 = 22; //błąd let nie mozna zmienic zmiennej
+// g1 = 22;//teraz zmienilismy g1
+// console.log(g1);//22
+
+// var g2 = 20;
+// var g2 = 70; //brak blędu na tą sama zmienną
+// console.log(g2); //70
+
+// if (1 == 1) {
+// 	var g2 = 88;
+// 	let g1 = 5;
+// }
+// console.log(g2); //88 poniewaz var w bloku kodu działa globalnie a let której jest w bloku kodu działa tylko w bloku kodu
+// console.log(g1);//12 zakres blokowy
+
+// {
+// 	let test2 = 33;
+// 	console.log(test2); //znalezione ponieważ sprawdza w bloku kodu
+// }
+// console.log(test2); //error test2 nie znaleziony ponieważ console.log sprawdza poza blokiem kodu
+// let %% const //nie znajduje się w window
+
+// for (var a = 1; a < 3; a++) console.log("a:",a);
+// console.log(a);//3
+
+// for (let b = 1; b < 3; b++) console.log("b:",b);
+// console.log(b);
+
+// let data1 = 22;
+// let data2 = 33;
+
+// function foo(){
+// 	let data1 = 11;
+// 	let data2 = 44;
+// 	console.log(data1, data2);//11 44
+
+// };
+// console.log(data1,data2);//22 23
+
+// foo();
+
+// function bar(){
+// 	"use strict"
+// 	let data5 = 11111;
+// 	data4 = 101;//error data4 is not the finde
+// };
+
+// bar();
+
+// function test1(){
+// 	console.log(a);//undefinde
+// 	var a = 10;
+// 	console.log(a);//10
+// };
+
+// function test2 (){
+// 	var a;//undefinde
+// 	console.log(a);//undefinde
+// 	a = 11;
+// 	console.log(a);
+// };
+
+// test1();//undefinde
+
+// function test1(){//error
+// 	console.log(a);
+// 	let a =11;
+// 	console.log(a);
+// }
+
+// function test3() {
+// 	let a = 10;
+
+// };
+// console.log(test3);
+// let a = 10;
+// console.log(a);//10
+
+// console.log(data); //error
+
+// let data;//undefinde
+// console.log(data);//undefinde
+
+// let y = 5;
+
+// if(1 == 1){
+// 	console.log(y);
+// 	let y = 10;
+// }//error temporal dead zone
+
+///////////////////ZMIANA WIELKOŚCI LITER WCZESNIEJ PRZYPISANEJ ZMIENNEJ
+
+// let txt = "TEST"; // string - prymityw
+
+// let str = new String(txt); // String - obiekt/ wrapper
+// str = str.toLowerCase();
+// console.log(txt); // DUZE LITERY
+// console.log(str); //małe litery
+// ///////////////////////SKRÓCONA WERSJA
+// str = txt.toLowerCase();//skrócona wersja tego wyżej
+// console.log(str);//skrócona wersja tego wyżej
+
+// let num = 123.12312212121213;
+// num = num.toFixed(2);// ustalamy ile liczb ma zostac po przecinku
+// console.log(num);//123.12
+
+// let num2 = new Number(123.45667);
+// num2 = num2.toFixed(2);
+// console.log(num2);
+
+// let str = "Hello World";
+// str[0] = "r"// nie mozna zmienić
+// console.log(str[0]);//H
+// console.log(str[6])//W [6] oznacza która literem z string ma nam pokazać
+
+// str = str + "!!!1"
+// console.log(str);//Hello World!!!1
+
+// ///////////////////MOZNA MOTYFIKOWAC
+
+// const arr = ["h","e","l","l","o"];
+// arr[0] = "R";// zmiana pierwszej litery z tablicy na R
+// console.log(arr);// zmieniło H na R
+
+// arr = {};// error
+
+/////////////////////
+
+// let num = 123.2323;
+
+// let num2 = new Number(123.99999);
+// console.log(Number.MAX_SAFE_INTEGER); //9007199254740991
+// console.log(Number.MIN_SAFE_INTEGER); //-9007199254740991
+// console.log(Number.MAX_VALUE); //1.7976931348623157e+308
+
+// console.log(Number.parseInt("1") + 10000000); //dodaje 10000000
+// console.log(Number.parseFloat("3") + 100000000000);
+
+// console.log(Number.isInteger(123)); //true
+// console.log(Number.isInteger(123.99)); //false
+
+// let a = 1 / 0; //infinity nieskończoność
+// console.log(a); //infinity
+// console.log(Number.isFinite(a)); //false
+// console.log(Number.isFinite(1)); //true
+
+// console.log(Math.round(12.56)); //13 zaokraglenie
+// console.log(Math.round(12.44)); //12
+// console.log(Math.ceil(14.44)); // zaokrągli w góre 15
+// console.log(Math.floor(14.99)); //14
+// console.log(Math.random()); //0.32137812683629186
+// console.log(Math.random() * 5); //1.399999999999999
+// console.log(Math.trunc(123.3333));//123 
