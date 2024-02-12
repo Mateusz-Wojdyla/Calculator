@@ -1569,4 +1569,91 @@ document.addEventListener("DOMContentLoaded", function () {
 // console.log(Math.floor(14.99)); //14
 // console.log(Math.random()); //0.32137812683629186
 // console.log(Math.random() * 5); //1.399999999999999
-// console.log(Math.trunc(123.3333));//123 
+// console.log(Math.trunc(123.3333));//123
+
+//  str = " A B C D D E";
+// //  str = str.replace("D","Test");//zastąp D na Test
+// //  console.log(str);// zastapi jedno D na Test
+
+//  str = srt.replace(/D/g, "TEST");
+//  console.log(str);
+
+// str = "0123456789";
+
+// console.log(str.substring(2));//od 2 do 9
+// console.log(str.substring(2,6));;// od 2 do 5
+
+// str = "Kasia ma kota,Kasia ma też psa";
+// console.log(str.indexOf("Kasia"));//0
+// console.log(str.indexOf("Kasia", 2));//14
+// console.log(str.lastIndexOf("Kasia"));//14
+
+// let str2 = str.substring(str.lastIndexOf("Kasia"));
+// console.log(str2);//Pokazanie Tekstu od słowa Kasia 2 w kolei Kasia ma też psa
+
+/////////////////////TABLICE///////////////////////////////
+// let arr = [1, 2, 3, 4, 5];
+// let tab = new Array(1, 2, 3, 4, 7, {}, []);
+// console.log(tab);
+
+// tab = [
+// 	[1, 2, 3],
+// 	[2, 4, 6],
+// 	[7, 8, 9],
+// ];
+// console.log(tab);
+// console.log(tab[0][1]); //2
+
+// tab = [
+// 	{ name: "Kasia", favColor: "red" },
+// 	{ name: "Adam", favColor: "red" },
+// 	{ name: "Ola", favColor: "blue" },
+// ];
+// tab[0] = { name: "Dominika", favColor: "ping" };
+// console.log(tab);
+
+// console.log(tab.length); //3
+
+// console.log(tab[tab.length - 1]); //Ola, Blue
+
+// tab = [12, 13, 14];
+// tab.push(6);
+// console.log(tab);
+
+// let element = tab.pop();
+// console.log(element); //6
+
+// tab = tab.reverse();
+// console.log(tab); //tablica
+
+// tab = tab.concat([99, 88, 77]);
+// console.log(tab); // dodaje do tablicy 99 88 77
+
+// let str = tab.join("-/-");
+// console.log(str); //oddzielone -/-
+
+// tab = new Array(7);
+// console.log(tab); //7 pusty
+
+// tab = new Array(5).fill(7);
+// console.log(tab); // 5 elementów o wartości 7
+
+// tab = ["ola", "kasia", "adam"];
+// for (let i = 0; i < tab.length; i++);
+// const el = tab[1];
+// console.log(el); //kasia
+
+// for (let el of tab) {
+// 	console.log(el); //pokazuje wszystko w tablicy
+// }
+
+// tab.forEach(function (item, index, arr) {
+// 	console.log(item);
+// });
+
+// tab = ["ania", "ola", "kasia", "adam", "karol", "daniel"];
+// let pos = tab.indexOf("adam");//zmiena pos w tym przypadku wpisujemy co ma znalesć i nam pokaże który to numer w tablicy
+// console.log(pos); //3 wywołanie szukanego numery czyli adam w tablicy to 3
+
+
+
